@@ -105,6 +105,9 @@ h4
             font-weight: normal
             font-size: 18px
             line-height: 24px
+
+.language-knowledges-section
+    margin: 0 20px
             
             
 /* Main content section */
@@ -142,39 +145,40 @@ h4
 .about-me-section
     // display: grid
     // grid-template-rows: 1.4fr 1fr 3fr
-    margin-top: 10px
+    margin-top: 15px
     position: relative
 .about-me
+    font-style: normal
+    font-weight: bold
+    &-name
+        margin: 0
+        position: relative
+        color: $text-black
+        text-align: center
+        justify-content: center
+        font-size: 35px
+        line-height: 60px
+        // background-color: $title-bg-col2
+    &-prof
+        margin: 0
+        // background-color: $title-bg-col3
+        position: relative
+        color: $title-bg-col2
+        text-align: center
+        // justify-content: center
+        font-size: 20px
+        line-height: 30px
+        // margin-top: 27px
+        // margin-bottom: 20px
+    &-description
+        // padding: 5px 0 10px 0
+        height: auto
+        margin: 15px 40px
+        text-align: justify
         font-style: normal
-        font-weight: bold
-        &-name
-            margin: 0
-            position: relative
-            color: $text-black
-            text-align: center
-            justify-content: center
-            font-size: 35px
-            line-height: 60px
-            // background-color: $title-bg-col2
-        &-prof
-            margin: 0
-            // background-color: $title-bg-col3
-            position: relative
-            color: $title-bg-col2
-            text-align: center
-            // justify-content: center
-            font-size: 20px
-            line-height: 30px
-            // margin-top: 27px
-            // margin-bottom: 20px
-        &-description
-            // padding: 5px 0 10px 0
-            margin: 15px 40px
-            text-align: justify
-            font-style: normal
-            font-weight: normal
-            font-size: 17px
-            line-height: 24px
+        font-weight: normal
+        font-size: 18px
+        line-height: 24px
 
 .main-content-title
     text-align: center
@@ -238,7 +242,7 @@ h4
         margin: 10px 0 0 40px 
     &-company-block
     &-position
-        
+        margin-top: 5px
         color: $text-black
     &-company
         margin-left: 10px
@@ -281,7 +285,7 @@ h4
         color: $title-bg-col2
         // margin: 20px 5px 5px 5px
     &-prof
-        margin-top: 5px
+        margin-top: 10px
         color: $text-black
         font-style: normal
         font-weight: bold
@@ -296,26 +300,26 @@ h4
     &-devider
 
 .my-education-block
-        display: grid
-        // grid-template-columns: 1fr 1fr
-        grid-template-areas: "my-education-block-one" "my-education-block-two"
-        text-align: left
-        margin: 0
-        padding: 0
-        &-one
-            grid-area: my-education-block-one
-            position: relative
-            grid-column: 1/2
-            grid-row: 2/3
-            // margin: 0
-            // padding: 0
-        &-two
-            grid-area: my-education-block-two
-            position: relative
-            grid-column: 2/3
-            grid-row: 2/3
-            // margin: 0
-            // padding: -30px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-areas: "my-education-block-one" "my-education-block-two"
+    text-align: left
+    margin: 0
+    padding: 0
+    &-one
+        grid-area: my-education-block-one
+        position: relative
+        grid-column: 1/2
+        grid-row: 2/3
+        // margin: 0
+        // padding: 0
+    &-two
+        grid-area: my-education-block-two
+        position: relative
+        grid-column: 2/3
+        grid-row: 2/3
+        // margin: 0
+        // padding: -30px
 
 /* My сertificates */
 
