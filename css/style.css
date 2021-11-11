@@ -417,7 +417,7 @@ h4 {
   }
   .soft-skills-section {
     grid-area: "sidebar-section";
-    position: absolute;
+    position: relative;
     grid-column: 2/3;
     grid-row: 3/4;
     margin-top: 10px;
