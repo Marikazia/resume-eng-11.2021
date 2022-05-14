@@ -314,9 +314,7 @@ h4 {
 
 .certificate-img-one {
   width: 25%;
-  cursor: -moz-zoom-in;
-  cursor: -webkit-zoom-in;
-  cursor: zoom-in;
+  cursor: pointer;
 }
 
 .certificate-img-one:hover {
