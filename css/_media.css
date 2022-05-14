@@ -1,0 +1,164 @@
+@charset "UTF-8";
+@media (max-width: 991.98px) {
+  .main-conteiner {
+    display: grid;
+    grid-template-columns: 0.9fr 2fr;
+  }
+  /* Sidebar section */
+  .contact-section-type {
+    margin-left: 10px;
+  }
+  .contact-section-link {
+    font-size: 15px;
+  }
+  .tech-skills-section, .soft-skills-section {
+    margin: 0 20px;
+  }
+  .tech-skills-item, .soft-skills-item {
+    margin-left: -10px;
+  }
+  /* Main content section */
+  .about-me-description {
+    font-size: 16px;
+  }
+  /* My projects */
+  .my-project-section {
+    margin-top: 5px;
+  }
+  .my-projects-text {
+    font-size: 16px;
+  }
+  /* My work experience */
+  .my-work-experience {
+    margin-top: 5px;
+  }
+  /* My education */
+  .my-education-block {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-column-gap: 5px;
+  }
+  /* My сertificates */
+  .my-certificates-section {
+    margin-top: 5px;
+  }
+  .certificate-img-one {
+    width: 32%;
+  }
+  .certificate-img-one:hover {
+    transform: scale(2.5);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .main-conteiner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar-section {
+    grid-area: "main-conteiner";
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .main-content-section {
+    grid-area: "main-conteiner";
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+  }
+  .sidebar-section {
+    display: grid;
+    align-items: start;
+    grid-template-rows: 0.5fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "about-me-name-prof", "sidebar-section-img", "contact-section", "tech-skills-section", "soft-skills-section", "language-knowledges-section";
+  }
+  .sidebar-section-img {
+    display: none;
+  }
+  .sidebar-section-img-small {
+    display: block;
+    grid-area: "sidebar-section";
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 80%;
+  }
+  .about-me-name-prof-side {
+    display: inline;
+    grid-area: "sidebar-section";
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .about-me-name {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #ffffff;
+  }
+  .about-me-prof {
+    color: #feffad;
+  }
+  .about-me-name-prof {
+    display: none;
+  }
+  .contact-section {
+    grid-area: "sidebar-section";
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: -20px;
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  .contact-section-link {
+    font-size: 13px;
+  }
+  .tech-skills-section {
+    grid-area: "sidebar-section";
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-top: 10px;
+  }
+  .soft-skills-section {
+    grid-area: "sidebar-section";
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-top: 10px;
+  }
+  .language-knowledges-section {
+    grid-area: "sidebar-section";
+    position: relative;
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  /* My content section */
+  .about-me-description {
+    margin: 15px;
+  }
+  .my-project-section {
+    margin-left: 15px;
+  }
+  .my-work-experience-section {
+    margin-left: 15px;
+  }
+  .my-education {
+    grid-column-gap: 15px;
+  }
+  .my-education-section {
+    margin-left: 15px;
+  }
+  .my-certificates-section {
+    margin-left: 15px;
+  }
+  .my-certificates-block {
+    margin-top: 10px;
+  }
+  .certificate-img-one {
+    width: 100%;
+  }
+}
