@@ -9,7 +9,7 @@
   font-family: 'Montserrat', sans-serif;
   display: grid;
   grid-template-columns: 1fr 2.5fr;
-  width: 1200px;
+  max-width: 1200px;
   background-color: #ffffff;
   margin: 40px auto;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
@@ -324,7 +324,6 @@ h4 {
   .main-conteiner {
     display: grid;
     grid-template-columns: 0.9fr 2fr;
-    width: 900px;
   }
   /* Sidebar section */
   .contact-section-type {
@@ -365,7 +364,7 @@ h4 {
     margin-top: 5px;
   }
   .certificate-img-one {
-    width: 33%;
+    width: 32%;
   }
   .certificate-img-one:hover {
     transform: scale(2.5);
@@ -374,9 +373,9 @@ h4 {
 
 @media (max-width: 575.98px) {
   .main-conteiner {
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-    grid-template-column: 1fr;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .sidebar-section {
     grid-area: "main-conteiner";
@@ -389,6 +388,7 @@ h4 {
     position: relative;
     grid-column: 1/2;
     grid-row: 2/3;
+    width: 100%;
   }
   .sidebar-section {
     display: grid;
