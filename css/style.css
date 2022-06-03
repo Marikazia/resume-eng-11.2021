@@ -7,9 +7,10 @@
 
 .main-conteiner {
   font-family: 'Montserrat', sans-serif;
+  /* // display: flex */
   display: grid;
   grid-template-columns: 1fr 2.5fr;
-  max-width: 1200px;
+  width: 1200px;
   background-color: #ffffff;
   margin: 40px auto;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
@@ -33,7 +34,7 @@ h4 {
 
 /* Sidebar section */
 .sidebar-section {
-  display: grid;
+  /* display: grid */
   background-color: #607762;
   justify-content: center;
   align-items: center;
@@ -59,7 +60,7 @@ h4 {
 }
 
 .contact-section {
-  margin: 10px 0 20px 20px;
+  margin: 0px 0 0 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -106,7 +107,7 @@ h4 {
 }
 
 .language-knowledges-section {
-  margin: 0 20px 20px 20px;
+  margin: 0 20px;
 }
 
 /* Main content section */
@@ -280,10 +281,6 @@ h4 {
   color: #777777;
 }
 
-.my-study-time-devider {
-  color: #000;
-}
-
 .my-education-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -308,6 +305,10 @@ h4 {
 }
 
 /* My сertificates */
+.examples-of-works {
+  text-align: center;
+}
+
 .my-certificates-section {
   margin: 0 40px;
 }
@@ -317,13 +318,11 @@ h4 {
 }
 
 .certificate-img-one {
-  width: 25%;
-  cursor: pointer;
+  width: 23%;
 }
 
 .certificate-img-one:hover {
-  transform: scale(2.5);
-  transition: 0.7s;
+  transform: scale(3.5);
 }
 
 @media (max-width: 991.98px) {
@@ -370,7 +369,7 @@ h4 {
     margin-top: 5px;
   }
   .certificate-img-one {
-    width: 32%;
+    width: 33%;
   }
   .certificate-img-one:hover {
     transform: scale(2.5);
@@ -379,9 +378,10 @@ h4 {
 
 @media (max-width: 575.98px) {
   .main-conteiner {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    width: 575px;
+    display: grid;
+    grid-template-column: 1fr;
+    grid-template-areas: "sidebar-section", "main-content-section";
   }
   .sidebar-section {
     grid-area: "main-conteiner";
